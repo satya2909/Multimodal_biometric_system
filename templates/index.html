@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multi-Modal Authentication</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Multi-Modal Authentication</h1>
+      <form method="POST" enctype="multipart/form-data">
+        <label for="fingerprint">Upload Fingerprint Image (.png):</label>
+        <input type="file" name="fingerprint" accept=".png" required />
+
+        <label>Upload ECG Signal (.dat):</label>
+        <input type="file" name="ecg_dat" accept=".dat" required />
+
+        <label>Upload ECG Header (.hea):</label>
+        <input type="file" name="ecg_hea" accept=".hea" required />
+
+        <button type="submit">Authenticate</button>
+      </form>
+    </main>
+  </body>
+</html>

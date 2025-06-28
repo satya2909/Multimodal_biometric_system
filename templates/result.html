@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Authentication Result</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Authentication Successful ✅</h1>
+      <p><strong>Predicted Identity:</strong> {{ identity }}</p>
+      <p><strong>Confidence:</strong> {{ confidence | round(3) }}</p>
+      <a href="{{ url_for('index') }}">Go back</a>
+    </main>
+  </body>
+</html>
